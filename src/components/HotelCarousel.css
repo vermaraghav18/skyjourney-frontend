@@ -1,0 +1,13 @@
+.hotel-carousel-container {
+  overflow-x: auto;
+  overflow-y: visible; /* ✅ Allow card hover to grow outside */
+  padding: 24px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.hotel-carousel {
+  display: flex;
+  padding: 0 6px;
+}

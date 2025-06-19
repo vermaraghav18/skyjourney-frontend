@@ -10,7 +10,6 @@ import SearchResultsPage from './pages/SearchResultsPage';
 import FlightDetailsPage from './pages/FlightDetailsPage';
 import BookingPage from './pages/BookingPage';
 import ConfirmationPage from './pages/ConfirmationPage';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import { AuthProvider } from './context/AuthContext';
 
@@ -21,7 +20,7 @@ function App() {
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <AuthProvider>
           <Router>
-            <Header />
+    
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/search" element={<SearchResultsPage />} />

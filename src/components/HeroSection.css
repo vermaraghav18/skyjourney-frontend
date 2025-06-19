@@ -1,0 +1,141 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 🌤️ Sky Background */
+
+.sky-background {
+  background: linear-gradient(to bottom, #66d8ff, #a6e7ff);
+  position: absolute; /* ✅ Required for z-index to apply */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.hero-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.hero-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem; /* Increased spacing between items */
+  margin: 0;
+  padding: 0;
+  padding-right: 2rem; /* ✅ Adds spacing on right */
+}
+
+.hero-navbar li a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease;
+}
+
+.hero-navbar li a:hover {
+  opacity: 0.8;
+}
+
+/* 🧾 Tagline Text Behind Airplane */
+.hero-tagline {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 6vw;
+  font-family: 'Caprasimo', cursive;
+  font-weight: 100;
+  color: rgb(112, 145, 255);
+  text-transform:initial;
+  z-index: 2;
+  white-space: nowrap;
+  letter-spacing: 6px;
+}
+
+.hero-search {
+  position: relative;
+  margin-top: 0vh;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 20;
+}
+
+.hero-search-wrapper {
+  position: absolute;
+  bottom: 5vh;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.hero-search-form {
+  width: 100%;
+}
+
+
+/* Layered Clouds */
+.cloud-back,
+.cloud-mid,
+.cloud-front {
+  position: absolute;
+  opacity: 0.7;
+  width: 20vw;
+  
+}
+
+.cloud-back {
+  top: 10%;
+  left: 5%;
+  z-index: 1;
+}
+
+.cloud-mid {
+  top: 25%;
+  left: 20%;
+  z-index: 2;
+}
+
+
+
+/* Cloud Streak */
+.cloud-streak {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 3;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Plane Layer */
+.airplane {
+  position: absolute;
+  width: 50vw;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  
+}

@@ -1,0 +1,51 @@
+/* src/components/WhyChooseUs.css */
+
+.why-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ffffff;
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #111;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  justify-items: center;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  max-width: 220px;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.why-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.why-desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
